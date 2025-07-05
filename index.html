@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elye - Personal Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1>Elye</h1>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Elye</span>
+                    </h1>
+                    <p class="hero-description">
+                        Welcome to my personal space on the web. I'm a developer passionate about creating 
+                        beautiful and functional web applications.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="scrollToProjects()">
+                            View Projects
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToContact()">
+                            Get in Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar">
+                        <div class="avatar-placeholder">E</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card placeholder">
+                        <div class="project-icon">🚀</div>
+                        <h3>Coming Soon</h3>
+                        <p>Exciting web applications are in development. Check back soon!</p>
+                        <div class="project-links">
+                            <span class="link-placeholder">Links will be added here</span>
+                        </div>
+                    </div>
+                    <div class="project-card placeholder">
+                        <div class="project-icon">💡</div>
+                        <h3>Future Project</h3>
+                        <p>More innovative solutions on the way.</p>
+                        <div class="project-links">
+                            <span class="link-placeholder">Links will be added here</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-description">
+                    Interested in collaborating or just want to say hello? I'd love to hear from you.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-placeholder">
+                        Contact information will be added here
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Elye. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
