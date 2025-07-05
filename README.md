@@ -7,6 +7,7 @@ A simple, modern personal landing page website.
 - Clean, responsive design
 - Modern UI with smooth animations
 - Placeholder sections for future projects
+- Social media links (Medium and Twitter)
 - Easy to customize and extend
 - Mobile-friendly
 
@@ -45,8 +46,9 @@ addProjectLink(0, 'My Web App', 'A description of my awesome web application', '
 
 ### Content
 
-- Edit `index.html` to update the content, add contact information, or modify sections
+- Edit `index.html` to update the content, add more social links, or modify sections
 - The structure is semantic and easy to understand
+- Social media links are easily customizable in the "Follow Me" section
 
 ## File Structure
 
@@ -59,8 +61,9 @@ addProjectLink(0, 'My Web App', 'A description of my awesome web application', '
 
 ## Future Enhancements
 
-- Add contact form functionality
+- Add more social media platforms
 - Integrate with a CMS or headless CMS
 - Add blog section
 - Implement dark mode toggle
 - Add more interactive animations
+- Add contact form functionality

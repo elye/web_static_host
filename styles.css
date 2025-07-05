@@ -271,24 +271,48 @@ body {
 .contact-description {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.contact-info {
-    max-width: 400px;
-    margin: 0 auto;
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.contact-placeholder {
-    padding: 2rem;
-    border: 2px dashed var(--border);
-    border-radius: 0.5rem;
-    color: var(--text-secondary);
-    font-style: italic;
-    background-color: var(--surface);
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+    background: var(--background);
+    border: 2px solid var(--border);
+    border-radius: 1rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.social-link:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.social-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-link span {
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 /* Footer */
@@ -347,6 +371,15 @@ body {
     .btn {
         flex: 1;
         min-width: 140px;
+    }
+    
+    .social-links {
+        gap: 1rem;
+    }
+    
+    .social-link {
+        min-width: 100px;
+        padding: 1rem 0.75rem;
     }
 }
 
