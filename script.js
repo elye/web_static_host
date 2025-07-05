@@ -40,16 +40,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add a typing effect to the hero title
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
-        const text = heroTitle.innerHTML;
-        heroTitle.innerHTML = '';
+        // Store the original HTML structure
+        const originalHTML = heroTitle.innerHTML;
+        // Extract just the text content for the typing effect
+        const textContent = heroTitle.textContent;
+        
+        // Clear the content and set up the structure
+        heroTitle.innerHTML = 'Hi, I\'m <span class="highlight"></span>';
+        const highlightSpan = heroTitle.querySelector('.highlight');
         heroTitle.style.opacity = '1';
         
         let i = 0;
+        const targetText = 'Elye';
+        
         function typeWriter() {
-            if (i < text.length) {
-                heroTitle.innerHTML += text.charAt(i);
+            if (i < targetText.length) {
+                highlightSpan.textContent += targetText.charAt(i);
                 i++;
-                setTimeout(typeWriter, 50);
+                setTimeout(typeWriter, 100);
             }
         }
         
